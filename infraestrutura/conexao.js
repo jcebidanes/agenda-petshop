@@ -2,10 +2,11 @@ const mysql = require('mysql')
 
 const conexao = mysql.createConnection({
   host: 'localhost',
-  port: 3306,
+  port: 27306,
   user: 'root',
-  password: 'admin',
-  database: 'agenda-petshop'
+  password: 'root',
+  database: 'agenda-petshop',
+  multipleStatements: true
 })
 
 module.exports = conexao
